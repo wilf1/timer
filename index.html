@@ -78,7 +78,29 @@ input {
    
   </head>  
   <body>
-     <script>
+     
+    <div id="setup-form">
+      
+    <div id="controls">
+      <label for="players">Players</label>
+      <label for="total-time">Time</label>
+      <label for="increment">Increment</label>
+      <input type="number" id="players" name="players" min="1" max="10">
+      <input type="number" id="total-time" name="total-time"
+       min="0" max="100">
+      
+      <input type="number" id="increment" name="increment"
+       min="0" max="100">
+    </div>
+    
+    <button id="reset-button">
+      Reset
+    </button>
+    </div>
+    <div id="timers">
+      <canvas id="canvas" width="600" height="600"></canvas>
+    </div>
+    <script>
     
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext('2d');
@@ -323,27 +345,6 @@ resetButton.addEventListener('click', function(event)
                             {
   reset();
 })</script>
-    <div id="setup-form">
-      
-    <div id="controls">
-      <label for="players">Players</label>
-      <label for="total-time">Time</label>
-      <label for="increment">Increment</label>
-      <input type="number" id="players" name="players" min="1" max="10">
-      <input type="number" id="total-time" name="total-time"
-       min="0" max="100">
-      
-      <input type="number" id="increment" name="increment"
-       min="0" max="100">
-    </div>
-    
-    <button id="reset-button">
-      Reset
-    </button>
-    </div>
-    <div id="timers">
-      <canvas id="canvas" width="600" height="600"></canvas>
-    </div>
 
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
