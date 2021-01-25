@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Game timer</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <div id="setup-form">
+      
+    <div id="controls">
+      <label for="players">Players</label>
+      <label for="total-time">Time</label>
+      <label for="increment">Increment</label>
+      <input type="number" id="players" name="players" min="1" max="10">
+      <input type="number" id="total-time" name="total-time"
+       min="0" max="100">
+      
+      <input type="number" id="increment" name="increment"
+       min="0" max="100">
+    </div>
+    
+    <button id="reset-button">
+      Reset
+    </button>
+    </div>
+    <div id="timers">
+      <canvas id="canvas" width="600" height="600"></canvas>
+    </div>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
