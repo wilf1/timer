@@ -1,0 +1,63 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  background:#111118;
+  padding:0px;
+  margin:0px;
+  padding-top:20px;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+label {
+  color:#ffffff;
+  font-size:20px;
+  margin:0 auto;
+  padding-bottom:5px;
+}
+
+#controls{
+  display:grid;
+  grid-template-columns:auto auto auto;
+  background:#333333;
+  padding:10px;
+  border-radius:5px;
+}
+
+#setup-form{
+  margin:0 auto;
+  width:500px;
+  display:grid;
+  grid-template-columns:400px 80px;
+  grid-column-gap:10px;
+}
+
+#reset-button{
+  background:#333333;
+  border-radius:5px;
+  border-width:0px;
+  margin:0;
+  color:white;
+  font-size:20px;
+  cursor:pointer;
+}
+
+input {
+  border-radius:5px;
+  border-width:0px;
+  height:24px;
+  width:100px;
+  font-size:20px;
+  margin:0 auto;
+  padding:3px;
+  background:#666666;
+  color:white;
+}
+
+#timers {
+  margin:auto 0;
+}
